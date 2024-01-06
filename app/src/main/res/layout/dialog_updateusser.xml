@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+  <LinearLayout
+      android:padding="16dp"
+      android:background="#BAB5BA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+          android:text="Update"
+          android:textSize="25dp"
+          android:textColor="@color/black"
+          android:textAlignment="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <EditText
+          android:id="@+id/ed_name_u"
+          android:hint="Nhập họ tên"
+          android:layout_marginTop="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <EditText
+          android:id="@+id/ed_loginname_u"
+          android:hint="Nhập tên người dùng"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <EditText
+          android:id="@+id/ed_pass_u"
+          android:hint="Nhập Pass"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <LinearLayout
+          android:layout_marginTop="15dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <Button
+              android:id="@+id/btn_update_u"
+              android:layout_weight="1.06"
+              android:text="Update"
+              android:textAllCaps="false"
+              android:background="@drawable/custom_btn"
+              android:textColor="@color/black"
+              android:textSize="19dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <Button
+              android:id="@+id/btn_cancel_u"
+              android:layout_weight="1"
+              android:text="Cancel"
+              android:layout_marginLeft="10dp"
+              android:textAllCaps="false"
+              android:background="@drawable/custom_btn"
+              android:textColor="@color/black"
+              android:textSize="19dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    
+    <LinearLayout
+        android:background="#FAEF93"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/ed_addmasachbook"
+            android:hint="Mã sách"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ed_addtensachbook"
+            android:layout_marginTop="10dp"
+            android:hint="Tên sách"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/ed_addgiathuebook"
+            android:hint="Giá thuê"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/sp_tenloai"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_addbook"
+                android:layout_weight="1"
+                android:text="Thêm"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_cancelbook"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
